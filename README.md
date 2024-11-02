@@ -100,7 +100,6 @@ https://github.com/user-attachments/assets/559365a1-1c11-4901-840a-15a861756428
 - [muhammed akber ch]: [HTML and css code]
 - [naseeh ameen]: [bug rectification and github maintanace]
 
-- file: [Uploading index.html…]()
 
 
 ---
