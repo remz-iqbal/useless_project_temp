@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Order Summary</title>
+    <style>
+        /* Styles for the order summary page */
+        body {
+            background-image: url('web3.jpg'); /* Background image */
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height: 100vh; 
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Summary</h1>
+        <div id="orderDetails"></div>
+
+        <!-- Track Order button -->
+        <div class="buttons">
+            <button id="trackButton" onclick="redirectToTrackOrder()">Track Order</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to reverse the user's name
+        function reverseString(str) {
+            return str.split("").reverse().join("");
+        }
+
+        // Random address generator
+        const randomAddresses = [
+            '123 Elm Street, Springfield',
+            '456 Maple Avenue, River City',
+            '789 Oak Drive, Mountain View',
+            '1010 Birch Street, Pineville',
+            '555 Cedar Avenue, Brookside'
+        ];
+
+        // Retrieve order details from sessionStorage
+        const orderDetails = JSON.parse(sessionStorage.getItem('orderDetails'));
+
+        if (orderDetails) {
+            // Reverse the user's name
+            const reversedName = reverseString(orderDetails.name);
+
+            // Select a random address
+            const randomAddress = randomAddresses[Math.floor(Math.random() * randomAddresses.length)];
+
+            // Display the order details with reversed name and random address
+            document.getElementById('orderDetails').innerHTML = `
+                <p><strong>Name:</strong> ${reversedName}</p>
+                <p><strong>Location:</strong> ${randomAddress}</p>
+                <p><strong>Order:</strong><br> ${orderDetails.order}</p>
+                <p><strong>Delivery Date:</strong> ${orderDetails.deliveryDate}</p>
+                ${orderDetails.discount ? `<p><strong>Discount:</strong> ${orderDetails.discount}</p>` : ''}
+            `;
+        } else {
+            document.getElementById('orderDetails').innerHTML = '<p>No order details found.</p>';
+        }
+
+        // Redirect to the track order page
+        function redirectToTrackOrder() {
+            window.location.href = 'Track-Page.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track My Delivery</title>
+    <style>
+        body {
+            background-image: url('web3.jpg'); /* Ensure this path points to your actual image location */
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height: 100vh; 
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; /* Blue button */
+            color: white;
+            transition: background-color 0.3s;
+            font-weight: bold; /* Bold text for buttons */
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: red; /* Color for the message */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Track My Delivery</h1>
+        <button onclick="trackDelivery()">Track</button>
+        <p id="trackingResult"></p>
+    </div>
+
+    <script>
+        function trackDelivery() {
+            const trackingResult = document.getElementById('trackingResult');
+            trackingResult.innerText = "Sorry, delivery boys are not available.";
+            
+            // Redirect to index.html after 5 seconds
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
