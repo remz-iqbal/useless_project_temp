@@ -1,33 +1,33 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# [LOTTA.COM] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Team technos]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [Muhammed rems iqubal oyalott] - [College of engineering trivandrum]
+- Member 2: [Muhammed Akbar ch] - [College of engineering trivandrum]
+- Member 3: [Naseeh Ameen] - [College of engineering trivandrum]
 
 ### Project Description
-[2-3 lines about what your project does]
+[A project based on a useless food delivery website, that doesn't serves its purpose and misleads the user]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[This website leads to innaccurate orders with wrong items, quantity,wrong addres or sometimes the order doesn't gets placed]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[The Website eventhough picksup inputs from user, it generates orders randomly with random outputs]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [html,css]
+- [does not use any specific web development frameworks. Instead, it relies on plain HTML, CSS, and JavaScript to create the form and handle user input]
+- [code relies solely on vanilla HTML, CSS, and JavaScript without any external libraries or frameworks]
+- [HTML,CSS,Javascript,Web Storage API,Image Assets]
 
 For Hardware:
 - [List main components]
@@ -46,13 +46,16 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
+![![homepage2](https://github.com/user-attachments/assets/ad3a2acf-3a83-4cb9-8ec3-d9e2bcad9080)
+](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![]![homepage2](https://github.com/user-attachments/assets/52b77d83-a19b-493c-9df3-0d4b77143918)
+(Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
+![]![order status](https://github.com/user-attachments/assets/1ab556fc-0b9a-40f1-acae-008c4d6cc2df)
+(Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
 
 # Diagrams
@@ -79,17 +82,26 @@ For Hardware:
 *Explain the final build*
 
 ### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+#
+
+ Video
+[]
+
+https://github.com/user-attachments/assets/559365a1-1c11-4901-840a-15a861756428
+
+
+*demonstreting : A window to order food items moreover can be track but finaiiy notifing there is no one available*
 
 # Additional Demos
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [muhammed rams]: [idea and UI development]
+- [muhammed akber ch]: [HTML and css code]
+- [naseeh ameen]: [bug rectification and github maintanace]
+
+- file: [Uploading index.html…]()
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
